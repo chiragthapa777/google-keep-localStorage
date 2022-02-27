@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google keeps</title>
+</head>
+<!-- 
+c9cfea
+829b8d -->
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-left" id="top">
+            <div class="log0"><i class="far fa-sticky-note"></i> <span>Keeps</span> </div>
+        </div>
+
+        <div class="nav-middle">
+            <input type="text" id="search" placeholder="🔎   Search Notes">
+        </div>
+        
+
+        <div class="nav-right">
+            <ul>
+                <li><a href="#top" class="active"><i class="fas fa-home"></i>HOME</a></li>
+                <li><a href="">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+
+
+
+    <!-- input form -->
+    <section class="input toggle-input">
+        <form action="">
+            <textarea name="" id="toggle-title" class="input-items" cols="30" rows="1" placeholder="Take a note.." ></textarea>
+        </form>
+    </section>
+    <section class="input "style="display:none;" id="input-toggle-it">
+        <form action="">
+            <textarea name="" id="note-title" class="input-items" cols="30" rows="1" placeholder="Title" ></textarea>
+            <!-- <input type="text" class="input-items" id="note-title" placeholder="Title"> -->
+            <textarea name="" class="input-items" id="note-body" cols="30" rows="2"
+                placeholder="Take a note.."></textarea>
+            <hr>
+            <div class="link-sec">
+                <li>
+                    <button id="add-note" class="add-note" type="submit"><i class="far fa-plus-square"></i></button>
+                </li>
+                <li>
+                    <button class="imp" id="imp"><i class="fas fa-star"></i></button>
+                </li>
+                <!-- <li>
+                    <div class="color">
+                        <li>red</li>
+                        <li>yellow</li>
+                        <li>blue</li>
+                    </div>
+                </li> -->
+            </div>
+        </form>
+
+    </section>
+    
+    
+
+    <!-- display the cards -->
+    <section class="output" id="output">
+        
+        <div class="card">
+            <div>
+            <h1 class="title"></h1>
+            <p class="body">
+            </p>
+        </div>
+            <div class="actions">
+                <hr>
+                <button class="delete">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button class="imp">
+                    <i class="fas fa-star"></i>
+                </button>
+                <button class="edit">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </div>
+        </div>
+        
+    </section>
+    <!-- edit model -->
+    <div class="model" style="display:none;">
+        <section class="input">
+            <form action="">
+   
+                <textarea name="" id="model-title" class="input-items" cols="30" rows="1" placeholder="Title" ></textarea>
+                <textarea name="" class="input-items" id="model-body" cols="30" rows="2"
+                    placeholder="Take a note.."></textarea>
+
+                <hr>
+    
+                <div class="link-sec">
+                    <li>
+                        <button id="add-model-note" class="add-note" type="submit"><i class="far fa-plus-square"></i></button>
+                    </li>
+                    <li>
+                        <button class="imp" id="model-imp"><i class="fas fa-star"></i></button>
+                    </li>
+                </div>
+            </form>
+    
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
